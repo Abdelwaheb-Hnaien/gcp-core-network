@@ -53,6 +53,8 @@ module "gcp-core-network" {
 
   org_prefix = "my-org"
 
+  host_project_id = "shared-xpn-project"
+
   shared_vpc_name = "my-org-shared-vpc"
 
   subnets = [
@@ -82,15 +84,16 @@ module "gcp-core-network" {
 ## Inputs
 | Name | Description  | Type | Default  | Required  |
 | --- | --- | --- | --- | --- |
-| perimeter | Your Google Cloud environment(example : "prod", "dev", etc.)  | String | n/a  | Required  |
-| org_prefix | Your Google Cloud organization prefix (example: "my-org")  | String | n/a  | Required (at least one subnet)  |
-| shared_vpc_name | Shared VPC Name  | String | n/a  | Required  |
-| subnets | Subnets to be created in the Shared VPC  | list(map(string)) | n/a  | Required  |
-| private_service_connect_ip | Private service endpoint  | String | n/a  | Required  |
-| cloudsql_ip_range | Private service Connection : Cloud SQL IP Range  | String | n/a  | Required  |
-| memorystore_ip_range | Private service Connection : Memorystore IP Range  | String | n/a  | Required  |
-| filestore_ip_range | Private service Connection : Filestore IP Range  | String | n/a  | Required  |
-| vpc_connector_ip_range | VPC Serverless Access : VPC connector IP | String | n/a  | Required  |
+| host_project_id | Host Project ID | String | n/a | yes |
+| perimeter | Your Google Cloud environment(example : "prod", "dev", etc.)  | String | n/a  | yes  |
+| org_prefix | Your Google Cloud organization prefix (example: "my-org")  | String | n/a  | yes (at least one subnet)  |
+| shared_vpc_name | Shared VPC Name  | String | n/a  | yes  |
+| subnets | Subnets to be created in the Shared VPC  | list(map(string)) | n/a  | yes  |
+| private_service_connect_ip | Private service endpoint  | String | n/a  | yes  |
+| cloudsql_ip_range | Private service Connection : Cloud SQL IP Range  | String | n/a  | yes  |
+| memorystore_ip_range | Private service Connection : Memorystore IP Range  | String | n/a  | yes  |
+| filestore_ip_range | Private service Connection : Filestore IP Range  | String | n/a  | yes  |
+| vpc_connector_ip_range | VPC Serverless Access : VPC connector IP | String | n/a  | yes  |
 
 ## Outputs
 | Name | Description  |

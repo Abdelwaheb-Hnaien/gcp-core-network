@@ -6,7 +6,7 @@ module "shared_vpc" {
     source  = "terraform-google-modules/network/google//modules/vpc"
     version = "5.1.0"
 
-    project_id   = "${var.org_prefix}-shared-xpn-${var.perimeter}"
+    project_id   = var.host_project_id
     network_name = "${var.shared_vpc_name}-${var.perimeter}"
 
     shared_vpc_host = true

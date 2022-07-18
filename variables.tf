@@ -8,6 +8,11 @@ variable "org_prefix" {
   description = "Organization name prefix"
 }
 
+variable "host_project_id" {
+  type        = string
+  description = "Host Project ID"
+}
+
 variable "shared_vpc_name" {
   type        = string
   description = "shared vpc name"
