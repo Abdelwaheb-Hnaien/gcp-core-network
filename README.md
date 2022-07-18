@@ -11,7 +11,7 @@ This module covers the core concepts of a GCP network, it allows you to provisio
 
 This module is meant for use with Terraform 1.2.3+.
 
-## Prerequisites:
+## Prerequisites
 
 You need to have a project with google cloud billing enabled.
 This module will make that project a **Host project** by enabling shared VPC. You need also to activate the following list of APIs :
@@ -40,7 +40,7 @@ This module will make that project a **Host project** by enabling shared VPC. Yo
 | pca.tf | [Configure Private Service Access](https://cloud.google.com/vpc/docs/configure-private-services-access) |
 
 ## Dependencies
-This module calls the following modules :
+This work relies on the following official Terraform modules (module call):
 - [ ] [Terraform VPC Module v5.1.0](https://github.com/terraform-google-modules/terraform-google-network/tree/v5.1.0/modules/vpc)
 - [ ] [Terraform Google Cloud DNS Module v3.0.0](https://github.com/terraform-google-modules/terraform-google-cloud-dns/tree/v3.0.0)
 
