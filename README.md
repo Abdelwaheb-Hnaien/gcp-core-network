@@ -47,7 +47,7 @@ This work relies on the following official Terraform modules (module call):
 ## Example Usage
 ```terraform
 module "gcp-core-network" {
-  source  = "git::ssh://git@github.com/Abdelwaheb-Hnaien/gcp-core-network.git?ref=v0.1.0"
+  source  = "git::ssh://git@github.com/Abdelwaheb-Hnaien/gcp-core-network.git?ref=0.1.0"
 
   perimeter = "prod"
 
