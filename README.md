@@ -5,7 +5,7 @@
 ) ![not official release](https://img.shields.io/badge/IaC-Terraform-blueviolet)
 ![not official release](https://img.shields.io/badge/release-not%20official-orange)
 
-This module covers the core concepts of a GCP network, it allows you to provision a [shared VPC](https://cloud.google.com/vpc/docs/shared-vpc) along with many other network componenets that you may need to establish a **secure** and **private** connection between your workloads on GCP and Google apis / internet.
+This module covers the core concepts of a GCP network, it allows you to provision a [shared VPC](https://cloud.google.com/vpc/docs/shared-vpc) along with many other network componenets that you may need to establish a **secure** and **private** connection between your workloads on GCP and Google APIs / internet.
 
 ## Compatibility
 
@@ -14,7 +14,7 @@ This module is meant for use with Terraform 1.2.3+.
 ## Prerequisites
 
 You need to have a project with google cloud billing enabled.
-This module will make that project a **Host project** by enabling shared VPC. You need also to activate the following list of APIs :
+This module will make that project a **Host project** by enabling shared VPC. You need also to enable the following list of APIs :
 - Compute Engine API ❯❯ `compute.googleapis.com`
 - Serverless VPC Access API ❯❯ `vpcaccess.googleapis.com`
 - Cloud DNS API ❯❯ `dns.googleapis.com`
@@ -105,4 +105,4 @@ network_self_link	| The URI of the VPC being created |
 project_id | VPC project id |
 
 ## Contribution
-Please feel free to fork the repository and submit a pull request if you think there is an issue or simply if you would like make this project better.
+Please feel free to fork the repository and submit a pull request if you think there is an issue or simply if you would like to make this project better.
